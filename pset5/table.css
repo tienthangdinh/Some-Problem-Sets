@@ -1,0 +1,27 @@
+table
+{
+    border: 10px solid black;
+
+}
+
+tr
+{
+    height: 70px;
+    text-align: center;
+}
+
+td
+{
+    background-color: blue;
+    color: pink;
+    font-size: 15pt;
+    font-family: georgia;
+    width: 70px;
+    text-align: center;
+
+}
+
+body
+{
+    background-color: pink;
+}

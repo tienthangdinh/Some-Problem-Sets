@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+    <h1 class="mb-3">Form</h1>
+
+    <!-- http://getbootstrap.com/docs/4.1/components/forms/ -->
+    <form action="/form" method="post">
+        Name: <input name="Name" autofocus type="text"> <br>
+
+        With how many guys have you slept? <br>
+        <input type="radio" name="sexpartner" value="none"> None<br>
+        <input type="radio" name="sexpartner" value="one"> One<br>
+        <input type="radio" name="sexpartner" value="two to three"> Two to three<br>
+        <input type="radio" name="sexpartner" value="four to ten"> Four to ten<br>
+        <input type="radio" name="sexpartner" value="more"> More<br>
+
+        Do you want to sleep with me? <br>
+        <select name="withme">
+            <option selected value="yes">Yes, definitely</option>
+            <option value="no">No, sorry</option>
+            <option value="egal">Es ist mir egal, machs gut bitte wenn wir mal machen</option>
+        </select>
+
+
+        <br>
+
+        <!-- http://getbootstrap.com/docs/4.1/components/buttons/ -->
+        <button class="btn btn-primary" type="submit">Submit</button>
+
+    </form>
+
+    <script>
+
+        /* TODO */
+        document.querySelector('form').onsubmit = function()
+        {
+            if(!document.querySelector('input').value)
+            {
+                alert('dir fehlt noch entweder dein Name oder die Zahl der Sexpartner');
+                return false;
+            }
+            else if (!document.querySelector('select').value)
+            {
+                alert('Sag mal ob du mit mir schlafen willst');
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+
+{% endblock %}

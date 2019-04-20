@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Number of Sexpartner</th>
+                  <th scope="col">Bewilligung zum Sex mit mir</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for girl in thelist %}
+                    <tr>
+                        <td>{{ girl["Name"] }}</td>
+                        <td>{{ girl["sexpartner"] }}</td>
+                        <td>{{ girl["withme"] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

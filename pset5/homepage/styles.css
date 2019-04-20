@@ -1,0 +1,38 @@
+body
+{
+    background-image:url('tanz.jpg');
+    background-size: cover;
+    min-height: 100%;
+
+}
+
+body, html
+{
+    height: 100%;
+}
+
+center
+{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 3.5vw;
+    color:DarkGray;
+    vertical-align: middle;
+    padding: 200px;
+}
+
+.nav-item, .nav-link
+{
+    /*font-family: "Raleway", serif;*/
+    font-size: 2vw;
+    color: DarkGrey;
+   /* width: 33.33333%;*/
+    /*float: left;*/
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p
+{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: DarkGrey;
+}
